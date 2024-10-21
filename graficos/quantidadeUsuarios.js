@@ -57,4 +57,3 @@ async function quantidadeUsuarios() {
 
 quantidadeUsuarios()
 
-//fim aula 08
