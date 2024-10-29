@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --bg-color: #222831;
-    --primary-color: #DDDDDD;
-    --secondary-color: #F05454;
-    --font: "Nunito Sans", sans-serif;
-    --color-bar: #a2a397;
+  --bg-color: #222831;
+  --primary-color: #DDDDDD;
+  --secundary-color: #F05454;
+  --font: Josefin Sans;
 }
 
 body {
@@ -14,41 +13,54 @@ body {
     font-family: var(--font);
     height: 100vh;
     margin: 0;
-}
+  }
 
-h1 {
+  header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+  }
+
+  h1 {
     font-size: 2rem;
     color: var(--bg-color);
     font-weight: 700;
-}
+  }
 
-nav {
+  nav {
     display: flex;
     justify-content: center;
     font-weight: 400;
-}
+  }
+  span{
+    font-weight: bold;
+    color: var(--secundary-color);
+  }
 
-
-nav a {
+  nav a {
     text-decoration: none;
     color: var(--bg-color);
     margin: 0 2rem 1rem 0rem;
     font-size: 1.2rem;
-}
+  }
 
-header {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 1px;
-}
-
-nav a:hover {
+  nav a:hover {
     text-decoration: underline;
     transform: scale(0.90);
     transition: transform 0.1s;
-}
+  }
 
-footer {
+  .graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secundary-color) solid 2px;
+  }
+
+  #graficos-container {
+    margin: 5rem;
+  }
+  footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,28 +69,4 @@ footer {
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
-}
-
-/* Fim codigos aula 03*/
-
-.graficos-container {
-    margin: 5rem;
-}
-
-.graficos-container__texto {
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 2rem;
-    border: var(--secondary-color) solid 2px;
-}
-
-span {
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
-/* Fim codigos aula 06*/
-
-.grafico {
-    margin-top: 3rem;
-}
+  }
