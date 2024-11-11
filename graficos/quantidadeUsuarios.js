@@ -1,7 +1,7 @@
 import { getCSS, tickConfig } from "./common.js"
 
 async function quantidadeUsuarios() {
-  const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
+  const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/educacao/educacao-etapas-de-ensino.json'
   const res = await fetch(url)
   const dados = await res.json()
   const nomeDasRedes = Object.keys(dados)
@@ -22,7 +22,7 @@ async function quantidadeUsuarios() {
     plot_bgcolor: getCSS('--bg-color'),
     paper_bgcolor: getCSS('--bg-color'),
     title: {
-      text: 'Redes sociais com mais usuários no mundo',
+      text: 'Escolas com mais Alunos no mundo',
       x: 0,
       font: {
         color: getCSS('--primary-color'),
@@ -32,7 +32,7 @@ async function quantidadeUsuarios() {
     },
     xaxis: {
       title: {
-        text: 'nome das redes sociais',
+        text: 'Instituições',
         font: {
           color: getCSS('--secondary-color')
         }
